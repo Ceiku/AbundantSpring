@@ -1,0 +1,16 @@
+security:
+  oauth2:
+    client:
+      client-id:
+      clientSecret:
+      accessTokenUri: https://accounts.google.com/o/oauth2/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+      scope: email profile
+      authenticationScheme: form
+    resource:
+      userInfoUri: https://www.googleapis.com/plus/v1/people/me/openIdConnect
+
+spring:
+  resources:
+    chain:
+      enabled: true
